@@ -8,7 +8,9 @@ function setColor(color) {
 }
 
 function setGradient(color1, color2) {
-  document.body.style.background = `linear-gradient(${color1}, ${color2})`;
+  const gradient = `linear-gradient(${color1}, ${color2})`;
+  document.body.style.background = gradient;
+  document.getElementById("colorCode").value = gradient;
 }
 
 document
@@ -28,9 +30,10 @@ document.getElementById("colorPicker").addEventListener("change", function () {
   setColor(this.value);
 });
 
-document.getElementById("applyGradient").addEventListener("click", function () {
-  const color1 = document.getElementById("colorPicker1").value;
-  const color2 = document.getElementById("colorPicker2").value;
-  setGradient(color1, color2);
-  document.getElementById("colorCode").value = `gradient(${color1}, ${color2})`;
-});
+document
+  .getElementById("button-gradient")
+  .addEventListener("click", function () {
+    const color1 = document.getElementById("colorPicker1").value;
+    const color2 = document.getElementById("colorPicker2").value;
+    setGradient(color1, color2);
+  });
