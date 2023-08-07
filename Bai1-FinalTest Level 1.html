@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      #mainForm {
+        text-align: center;
+      }
+      input {
+        margin: 1em;
+        padding: 0.5em;
+      }
+      #result {
+        margin: 1em;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainForm">
+      <input type="number" id="numA" placeholder="Nhập số a" />
+      <input type="number" id="numB" placeholder="Nhập số b" />
+      <button type="button" onclick="displaySquareNumbers()">
+        Hiển thị số chính phương
+      </button>
+      <div id="result"></div>
+    </div>
+
+    <script>
+      function isSquareNumber(n) {
+        return Number.isInteger(Math.sqrt(n));
+      }
+
+      function displaySquareNumbers() {
+        const numA = parseInt(document.getElementById("numA").value);
+        const numB = parseInt(document.getElementById("numB").value);
+        let result =
+          "Các số chính phương từ " + numA + " đến " + numB + " là: /n";
+
+        for (let i = numA; i <= numB; i++) {
+          if (isSquareNumber(i)) {
+            result += i + " ";
+          }
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

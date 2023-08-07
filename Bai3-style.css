@@ -1,0 +1,45 @@
+.title {
+  font-family: sans-serif;
+  color: white;
+}
+.maintitle {
+  font-family: sans-serif;
+}
+.dm-mono {
+  font-family: monospace;
+}
+.commontext {
+  color: white;
+}
+.purple-button {
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+}
+
+.spec {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.sub-title {
+  color: #545c71;
+}
+.marketplace {
+  color: white;
+  text-align: center;
+}
+
+.nfticon {
+  display: flex;
+}
+
+.nft-description {
+  justify-content: space-between;
+  display: flex;
+}
+
+.background {
+  background-color: #1c233d;
+}

@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.5s;
+}
+
+#app {
+  text-align: center;
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+button,
+input {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#colorCode {
+  width: 80%;
+}
+
+#gradientPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  background-color: #1abc9c;
+}
+
+#applyGradient {
+  background-color: #9b59b6;
+  color: white;
+}
+
+#applyGradient:hover {
+  background-color: #8e44ad;
+}
+
+#applyGradient:active {
+  background-color: #f1c40f;
+  color: black;
+}
