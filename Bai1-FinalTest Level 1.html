@@ -44,11 +44,11 @@
         const numA = parseInt(document.getElementById("numA").value);
         const numB = parseInt(document.getElementById("numB").value);
         let result =
-          "Các số chính phương từ " + numA + " đến " + numB + " là: /n";
+          "Các số chính phương từ " + numA + " đến " + numB + " là: <br>";
 
         for (let i = numA; i <= numB; i++) {
           if (isSquareNumber(i)) {
-            result += i + " ";
+            result += "<strong> " + i + "</strong> ";
           }
         }
 

@@ -4,7 +4,6 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  transition: background 0.5s;
 }
 
 #app {
@@ -43,7 +42,6 @@ button {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -54,16 +52,16 @@ button:active {
   background-color: #1abc9c;
 }
 
-#applyGradient {
+#button-gradient {
   background-color: #9b59b6;
   color: white;
 }
 
-#applyGradient:hover {
+#button-gradient:hover {
   background-color: #8e44ad;
 }
 
-#applyGradient:active {
+#button-gradient:active {
   background-color: #f1c40f;
   color: black;
 }
